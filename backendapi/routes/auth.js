@@ -14,8 +14,8 @@ router.post('/', [
     if (!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array() });
     }
-    // const user = User(req.body)
-    // user.save()
+    // User(req.body).save()
+    
     User.create({
         name: req.body.name,
         email: req.body.email,
