@@ -7,5 +7,5 @@ const NotesSchema = new Schema({
     date: { type: Date, default: Date.now },
 });
 const Notes = mongoose.model('notes', NotesSchema)
-Notes.createIndexes();
+// Notes.createIndexes();
 module.exports = Notes

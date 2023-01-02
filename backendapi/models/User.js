@@ -9,5 +9,5 @@ const UserSchema = new Schema({
 });
 
 const User = mongoose.model('users', UserSchema)
-User.createIndexes();
+// User.createIndexes(); //This is created corresponding to email as it's unqiue
 module.exports = User
