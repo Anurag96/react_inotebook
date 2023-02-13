@@ -14,15 +14,15 @@ function App() {
     <>
     <NoteContextProvider>  
       <Router>
-        <div className="App">
           <Navbar />
+          <div className="container">
           <Routes>
             <Route exact path="/about" element={<About />}>
             </Route>
             <Route exact path="/" element={<Home />}>
             </Route>
           </Routes>
-        </div>
+          </div>
       </Router>
       </NoteContextProvider>
     </>
