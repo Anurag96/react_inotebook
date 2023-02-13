@@ -7,12 +7,12 @@ import {
 } from "react-router-dom";
 import Home from './components/Home';
 import About from './components/About';
-import NoteState from './context/notes/NoteState';
+import NoteContextProvider from './context/notes/NoteContextProvider';
 
 function App() {
   return (
     <>
-    <NoteState>  
+    <NoteContextProvider>  
       <Router>
         <div className="App">
           <Navbar />
@@ -24,7 +24,7 @@ function App() {
           </Routes>
         </div>
       </Router>
-      </NoteState>
+      </NoteContextProvider>
     </>
   );
 }

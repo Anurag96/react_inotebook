@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import NoteContext from "./noteContext";
+import React, { useState,createContext } from "react";
+import NoteContext from "./NoteContext";
 
-const NoteState = (props) => {
+const NoteContextProvider = (props) => {
 
     const s1 = {
         "name": "Anurag",
@@ -29,4 +29,4 @@ const NoteState = (props) => {
 
 }
 
-export default NoteState;
+export default NoteContextProvider;

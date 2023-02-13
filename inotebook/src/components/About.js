@@ -1,5 +1,5 @@
 import React, { useContext,useEffect } from 'react'
-import noteContext from '../context/notes/noteContext'
+import noteContext from '../context/notes/NoteContext'
 
 const About = () => {
   const a = useContext(noteContext)
@@ -13,7 +13,7 @@ const About = () => {
     return (
     <div>
       <h1>Welcome to About</h1>
-      <p> Hello {a.state.name} and age is {a.state.age}</p>
+      <p> Hello {a.state.name} and age is {a.state.age}</p> 
     </div>
   )
 }
