@@ -17,11 +17,45 @@ const NoteContextProvider = (props) => {
           "_id": "63ebe677def5d5531829c323",
           "user": "63ebe420bab515d41ef6b8bd",
           "title": "02/14-Todays Tasks",
-          "description": "Cook Dinner after gym",
+          "description": "Cook Dinner after gym and clean dishes",
           "tag": "general",
           "date": "2023-02-14T19:52:23.924Z",
           "__v": 0
-        }
+        },{
+            "_id": "63ebe5bbbab515d41ef6b8bf",
+            "user": "63ebe420bab515d41ef6b8bd",
+            "title": "02/14-Todays Tasks",
+            "description": "Go to the gym after the office",
+            "tag": "general",
+            "date": "2023-02-14T19:49:15.366Z",
+            "__v": 0
+          },
+          {
+            "_id": "63ebe677def5d5531829c323",
+            "user": "63ebe420bab515d41ef6b8bd",
+            "title": "02/14-Todays Tasks",
+            "description": "Cook Dinner after gym and clean dishes",
+            "tag": "general",
+            "date": "2023-02-14T19:52:23.924Z",
+            "__v": 0
+          },{
+            "_id": "63ebe5bbbab515d41ef6b8bf",
+            "user": "63ebe420bab515d41ef6b8bd",
+            "title": "02/14-Todays Tasks",
+            "description": "Go to the gym after the office",
+            "tag": "general",
+            "date": "2023-02-14T19:49:15.366Z",
+            "__v": 0
+          },
+          {
+            "_id": "63ebe677def5d5531829c323",
+            "user": "63ebe420bab515d41ef6b8bd",
+            "title": "02/14-Todays Tasks",
+            "description": "Cook Dinner after gym and clean dishes",
+            "tag": "general",
+            "date": "2023-02-14T19:52:23.924Z",
+            "__v": 0
+          }
       ]
 
       const [notes, setnotes] = useState(notesInitial)
