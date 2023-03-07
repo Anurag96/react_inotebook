@@ -8,6 +8,7 @@ import {
 import Home from './components/Home';
 import About from './components/About';
 import NoteContextProvider from './context/notes/NoteContextProvider';
+import Alert from './components/Alert';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <NoteContextProvider>  
       <Router>
           <Navbar />
+          <Alert message="Welcome to INotebook"/>
           <div className="container">
           <Routes>
             <Route exact path="/about" element={<About />}>
