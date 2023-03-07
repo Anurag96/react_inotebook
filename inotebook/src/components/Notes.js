@@ -7,7 +7,7 @@ import Modal from 'react-bootstrap/Modal';
 
 function Notes() {
   const context = useContext(noteContext)
-  const { notes, getNotes } = context
+  const { notes, getNotes, editNote } = context
 
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function Notes() {
 
   const ref = useRef(null)
 
-  const [note, setNote] = useState({ etitle: "", edescription: "", etag: "" })
+  const [note, setNote] = useState({ id:"", etitle: "", edescription: "", etag: "" })
 
   const [show, setShow] = useState(false);
 
@@ -25,12 +25,13 @@ function Notes() {
 
   const updateNote = (currentNote) => {
     ref.current.click();
-    setNote({etitle:currentNote.title,edescription:currentNote.description,etag:currentNote.tag})
+    setNote({id:currentNote._id,etitle:currentNote.title,edescription:currentNote.description,etag:currentNote.tag})
   }
 
   const handleClick = (e) => {
+    editNote(note.id,note.etitle,note.edescription,note.etag)
     setShow(false);
-    e.preventDefault();
+    // e.preventDefault();
 
   }
   const onChange = (e) => {
